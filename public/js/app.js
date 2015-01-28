@@ -5,7 +5,7 @@ var Header = require('./views/header');
 var Siderail = require('./views/siderail');
 
 var App = React.createClass({
-  render: function () {
+  render: () => {
     return (
       <div>
         <div>

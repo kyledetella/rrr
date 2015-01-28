@@ -1,7 +1,7 @@
 var React = require('react');
 
 module.exports = React.createClass({
-  render: function () {
+  render: () => {
     return (
       <header>This is the header</header>
     );
