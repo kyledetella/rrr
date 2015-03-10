@@ -1,10 +1,10 @@
 'use strict';
 
-var React = require('react');
-var Header = require('./views/header');
-var Siderail = require('./views/siderail');
+const React = require('react');
+const Header = require('./views/header');
+const Siderail = require('./views/siderail');
 
-var App = React.createClass({
+let App = React.createClass({
   render: () => {
     return (
       <div>

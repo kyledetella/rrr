@@ -3,6 +3,7 @@
 var gulp = require('gulp');
 var browserify = require('browserify');
 var reactify = require('reactify');
+var babelify = require('babelify');
 var source = require('vinyl-source-stream');
 var sass = require('gulp-sass');
 var nodemon = require('gulp-nodemon');
@@ -27,6 +28,7 @@ var config = {
 gulp.task('js', function () {
   return browserify(config.src.js.main)
     .transform(reactify)
+    .transform(babelify)
     .bundle()
     .pipe(source(config.src.js.output))
     .pipe(gulp.dest(config.dist + '/js'));
